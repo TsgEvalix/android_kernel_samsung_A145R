@@ -99,8 +99,6 @@ out:
 
 static int tz_format_cred_user(struct tz_cred *cred)
 {
-	// bypass tee hash hopefully
-	return 0;
 	uint8_t hash[SHA256_DIGEST_SIZE];
 	struct cred_cache_entry *cred_cache_entry;
 	struct pid *pid = get_task_pid(current, PIDTYPE_PID);
