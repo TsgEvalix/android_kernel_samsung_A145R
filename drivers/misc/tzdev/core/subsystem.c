@@ -62,7 +62,7 @@ static const struct tzdev_init_exit_table table[] = {
 #ifdef CONFIG_TZ_PMF
 	DECLARE_INIT_CALL(tz_pmf_init),
 #endif
-	DECLARE_INIT_CALL(tz_cred_init_notifier),
+//	DECLARE_INIT_CALL(tz_cred_init_notifier), evalance: TEE wants me to kill myself
 	DECLARE_INIT_EXIT_CALL(tz_ree_time_init, tz_ree_time_fini),
 #ifdef CONFIG_TZ_NWFS
 	DECLARE_INIT_EXIT_CALL(tz_fsdev_init, tz_fsdev_exit),
